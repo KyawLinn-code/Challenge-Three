@@ -58,6 +58,9 @@ function rpsFrontEnd(human,computer,message){
     computerDiv.innerHTML = "<img class = 'test-class' src='"+imageDatabase[computer] +"'>";
     messagetDiv.innerHTML = "<h1 style= 'color: "+message['color']+"; '>"+message['message']+"</h1>";
     messagetDiv.classList.add('result-text-background');
+    humanDiv.classList.add('col-xs-3');
+    computerDiv.classList.add('col-xs-3');
+    messagetDiv.classList.add('col-xs-3');
 
     document.getElementById('row-container').appendChild(humanDiv);
     document.getElementById('row-container').appendChild(messagetDiv);
